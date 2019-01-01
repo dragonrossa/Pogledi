@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+    decimal cijena = 60;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+
+        @if (cijena<45)
+        {
+            <p>Cijena @cijena je preniska</p>
+        }
+        else if (cijena < 90)
+        {
+            <p>Cijena @cijena je korektna</p>
+        }
+        else
+        {
+            <p>Cijena @cijena  je previsoka</p>
+        }
+    </div>
+</body>
+</html>

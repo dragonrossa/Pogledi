@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+
+    string voce = "Jabuka";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SwitchView</title>
+</head>
+<body>
+    <div> 
+        @switch (voce)
+        {
+            case "Jabuka":
+                <p>Jabuka je zelena!</p>
+                break;
+
+            case "Limun":
+                <p>Limun je žut!</p>
+                break;
+            case "Naranča":
+                <p> Naranča je narančasta!</p>
+                break;
+
+            default:
+                <p>Nepoznato voće!</p>
+                break;
+        }
+    </div>
+</body>
+</html>
