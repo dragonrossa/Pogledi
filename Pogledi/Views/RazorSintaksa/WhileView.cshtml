@@ -1,6 +1,7 @@
 ﻿
 @{
     Layout = null;
+    int brojac = 1;
 }
 
 <!DOCTYPE html>
@@ -12,6 +13,12 @@
 </head>
 <body>
     <div> 
+        @while (brojac < 11)
+        {
+            <label>Linija @brojac</label><br />
+            @:------------------<br />
+            brojac++;
+        }
     </div>
 </body>
 </html>

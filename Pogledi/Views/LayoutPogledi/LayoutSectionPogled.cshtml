@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "LayoutSectionPogled";
+    Layout = "~/Views/_SectionLayout.cshtml";
+    int godina = DateTime.Now.Year;
+}
+
+<h2>LayoutSectionPogled</h2>
+
+@section Header{
+    <h1 style="background-color:lightblue"> Hello, it's me!</h1>
+    }
+
+@section Footer {
+    <h5>Rosana - @godina</h5>}
+
