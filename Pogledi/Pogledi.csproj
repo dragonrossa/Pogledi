@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\LayoutPoglediController.cs" />
     <Compile Include="Controllers\RazorSintaksaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -107,6 +108,10 @@
     <Content Include="Views\RazorSintaksa\SwitchView.cshtml" />
     <Content Include="Views\RazorSintaksa\ForView.cshtml" />
     <Content Include="Views\RazorSintaksa\WhileView.cshtml" />
+    <Content Include="Views\_OsnovniLayout.cshtml" />
+    <Content Include="Views\LayoutPogledi\LayoutPogled.cshtml" />
+    <Content Include="Views\_SectionLayout.cshtml" />
+    <Content Include="Views\LayoutPogledi\LayoutSectionPogled.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
