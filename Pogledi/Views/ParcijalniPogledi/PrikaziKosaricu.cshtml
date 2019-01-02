@@ -1,0 +1,32 @@
+﻿@model  List<Pogledi.Models.Artikl>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PrikaziKosaricu</title>
+    <link href="~/Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div> 
+        <div style="display:table">
+
+            <div class="divCell"><b>Naziv</b></div>
+            <div class="divCell"><b>Cijena</b></div>
+            <div class="divCell"><b>Kolicina</b></div>
+
+        </div>
+
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_Artikl", item)
+        }
+    </div>
+</body>
+</html>
