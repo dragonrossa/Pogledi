@@ -89,16 +89,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Styles.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\LayoutPoglediController.cs" />
+    <Compile Include="Controllers\ParcijalniPoglediController.cs" />
     <Compile Include="Controllers\RazorSintaksaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Artikl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +115,8 @@
     <Content Include="Views\LayoutPogledi\LayoutPogled.cshtml" />
     <Content Include="Views\_SectionLayout.cshtml" />
     <Content Include="Views\LayoutPogledi\LayoutSectionPogled.cshtml" />
+    <Content Include="Views\Shared\_Artikl.cshtml" />
+    <Content Include="Views\ParcijalniPogledi\PrikaziKosaricu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -121,7 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
