@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChildActionsController.cs" />
     <Compile Include="Controllers\LayoutPoglediController.cs" />
     <Compile Include="Controllers\ParcijalniPoglediController.cs" />
     <Compile Include="Controllers\RazorSintaksaController.cs" />
@@ -117,6 +118,7 @@
     <Content Include="Views\LayoutPogledi\LayoutSectionPogled.cshtml" />
     <Content Include="Views\Shared\_Artikl.cshtml" />
     <Content Include="Views\ParcijalniPogledi\PrikaziKosaricu.cshtml" />
+    <Content Include="Views\ChildActions\ChildActionView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
